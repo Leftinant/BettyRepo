@@ -4,33 +4,33 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className=' z-99 fixed top-0 left-0 w-screen'>
+    <nav className=' z-99 fixed top-0 left-0 w-screen bg-rose-200'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xl font-bold text-rose-950 '>
         <div className='flex justify-between items-center '>
           <div className='hidden md:flex space-x-20'>
-            <a href='#' className='hover:text-pink-300'>
+            <a href='#' className='hover:overline '>
               Home
             </a>
-            <a href='#' className='hover:text-pink-300'>
+            <a href='#' className='hover:overline'>
               About
             </a>
-            <a href='#' className='hover:text-pink-300'>
+            <a href='#' className='hover:overline'>
               Products
             </a>
           </div>
 
-          <div className='bg-white/10 rounded-full'>
-            <img src='/logo2.png' alt='logo' className='md:w-30 w-20 h-auto' />
+          <div className='bg-white/20 rounded-full'>
+            <img src='/logo2.png' alt='logo' className='md:w-25 w-20 h-auto' />
           </div>
 
           <div className='hidden md:flex space-x-20 items-center'>
-            <a href='#' className='hover:text-pink-300'>
+            <a href='#' className='hover:overline'>
               Gallery
             </a>
-            <a href='#' className='hover:text-pink-300'>
+            <a href='#' className='hover:overline'>
               Contact
             </a>
-            <button className='btn border-none bg-pink-300 text-rose-950 font-medium p-4 rounded-full hover:bg-pink-400 transition duration-1000'>
+            <button className='btn border-none bg-pink-300 text-rose-950 font-medium p-4 rounded-full hover:bg-rose-950 hover:text-pink-300 transition duration-2000'>
               Book Now
             </button>
           </div>
@@ -60,19 +60,19 @@ export default function Navbar() {
 
       {isMenuOpen && (
         <div className='md:hidden p-5 pl-15 text-rose-950 text-lg text-right space-y-3  fixed right-0 bg-white/20'>
-          <a href='#' className='block hover:text-pink-300'>
+          <a href='#' className='block '>
             Home
           </a>
-          <a href='#' className='block hover:text-pink-300'>
+          <a href='#' className='block '>
             About
           </a>
-          <a href='#' className='block hover:text-pink-300'>
+          <a href='#' className='block '>
             Products
           </a>
-          <a href='#' className='block hover:text-pink-300'>
+          <a href='#' className='block '>
             Gallery
           </a>
-          <a href='#' className='block hover:text-pink-300'>
+          <a href='#' className='block '>
             Contacts
           </a>
         </div>
